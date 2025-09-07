@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><messages><msg code="0" type="2">Start Time: Tuesday, September 10, 2024 6:49:52 AM</msg><msg code="0" type="0">Random Seed: 48710</msg><msg code="0" type="0">json:
+[{"element": "table", "data": [["Number of Trees", "100"], ["Leaf Size", "5"], ["Tree Depth Range", "20-33"], ["Mean Tree Depth", "24"], ["% of Training Available per Tree", "100"], ["Number of Randomly Sampled Variables", "1"], ["% of Training Data Excluded for Validation", "10"]], "elementProps": {"striped": "true", "noHeader": true, "title": "Model Characteristics", "0": {"align": "left", "pad": "0px", "wrap": true}, "1": {"align": "right", "pad": "0px", "wrap": true}}}]</msg><msg code="0" type="0">json:
+[{"element": "table", "data": [["Number of Trees", "50", "100"], ["MSE", "0.005", "0.005"], ["% of variation explained", "41.895", "45.033"]], "elementProps": {"striped": "true", "noHeader": true, "title": "Model Out of Bag Errors", "0": {"align": "left", "pad": "0px", "wrap": true}, "1": {"align": "right", "pad": "0px", "wrap": true}, "2": {"align": "right", "pad": "0px", "wrap": true}}}]</msg><msg code="0" type="0">json:
+[{"element": "table", "data": [["Variable", "Importance", "%"], ["2022 Per Capita Income", "8.73", "35"], ["2022 Pop Age 25+: High School/No Diploma: Percent", "8.33", "34"], ["2022 Median Age", "7.59", "31"]], "elementProps": {"striped": "true", "title": "Top Variable Importance", "0": {"align": "left", "pad": "0px", "wrap": true}, "1": {"align": "right", "pad": "0px", "wrap": true}, "2": {"align": "right", "pad": "0px", "wrap": true}}}]</msg><msg code="0" type="0">json:
+[{"element": "table", "data": [["R-Squared", "0.895"], ["Mean Absolute Error (MAE)", "0.026"], ["Mean Absolute Percentage Error (MAPE)", "0.040"], ["Root Mean Square Error (RMSE)", "0.034"], ["p-value", "0.000"], ["Standard Error", "0.005"]], "elementProps": {"striped": "true", "noHeader": true, "footnote": ["*Predictions for the data used to train the model compared to the observed categories for those features"], "title": "Training Data: Regression Diagnostics", "0": {"align": "left", "pad": "0px", "wrap": true}, "1": {"align": "right", "pad": "0px", "wrap": true}}}]</msg><msg code="0" type="0">json:
+[{"element": "table", "data": [["R-Squared", "0.495"], ["Mean Absolute Error (MAE)", "0.052"], ["Mean Absolute Percentage Error (MAPE)", "0.083"], ["Root Mean Square Error (RMSE)", "0.069"], ["p-value", "0.000"], ["Standard Error", "0.030"]], "elementProps": {"striped": "true", "noHeader": true, "footnote": ["*Predictions for the test data (excluded from model training) compared to the observed values for those test features"], "title": "Validation Data: Regression Diagnostics", "0": {"align": "left", "pad": "0px", "wrap": true}, "1": {"align": "right", "pad": "0px", "wrap": true}}}]</msg><msg code="210" type="100">ERROR 000210: Cannot create output C:\Users\HP\Documents\15. ESRITRAINING\Prediction_section 2\Prediction\Prediction_Data.gdb\Out_Validation_Table.</msg><msg code="-2147467259" type="100">﻿RuntimeError: Can't create chart parameters.
+﻿
+﻿The above exception was the direct cause of the following exception:
+﻿
+﻿Traceback (most recent call last):
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\SSForest.py", line 8124, in &lt;module&gt;
+﻿    #### Projection Group ####
+﻿    ^^^^^^^^^^^^^^^^^^^
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\SSForest.py", line 7595, in execute
+﻿    ﻿
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\SSForest.py", line 5706, in executeModel
+﻿    accuracy = (y_true == y_pred).sum() / len(y_true)
+﻿            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\SSForest.py", line 3522, in report
+﻿    if i[1]["source"] in ["DIST", "RASTER"] and OS.path.realpath(i[1]["sourceData"]) != OS.path.realpath(i[0]["sourceData"])]
+﻿^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿  File "c:\program files\arcgis\pro\Resources\ArcToolbox\scripts\SSForest.py", line 4915, in reportCrosValidation
+﻿    for value in dictClassesV:
+﻿    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+﻿SystemError: &lt;function passthrough_attr.&lt;locals&gt;._set at 0x000001A3EE04DD00&gt; returned a result with an exception set
+</msg><msg code="0" type="0">Failed script Forest-based and Boosted Classification and Regression...</msg><msg code="-2147467259" type="100">Failed to execute (Forest).</msg><msg code="0" type="3">Failed at Tuesday, September 10, 2024 6:50:09 AM (Elapsed Time: 17.24 seconds)</msg></messages>
